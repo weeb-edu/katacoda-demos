@@ -6,3 +6,5 @@ Clone https://github.com/tetratelabs/istio-cloud-map to our katacoda systems
 
 Hmm I wonder why that's not working 
 
+<pre>`echo "Run in Terminal"`{{execute}}</pre>
+
