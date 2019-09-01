@@ -2,7 +2,7 @@ lalala
 
 ## Task
 
-Clone https://github.com/tetratelabs/istio-cloud-map to our katacoda systems
+Clone https://github.com/tetratelabs/istio-cloud-map by clicking command below. Adding a line before Task header.
 
 `git clone https://github.com/tetratelabs/istio-cloud-map tet-istio-cloud-map-operator` {{execute}}
 
