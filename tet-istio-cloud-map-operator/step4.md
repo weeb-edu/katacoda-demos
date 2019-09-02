@@ -1,4 +1,4 @@
-## Set up the Istio Cloud Map operator to your Kubernetes cluster:
+## Set up the Istio Cloud Map operator
 
 1. Create an AWS IAM identity with read access to AWS Cloud Map for the operator to use.
 
