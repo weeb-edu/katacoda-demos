@@ -1,4 +1,4 @@
-## 
+## Set up a basic front proxy in Envoy
 
 Retrieve static configuration for Envoy to use
 
