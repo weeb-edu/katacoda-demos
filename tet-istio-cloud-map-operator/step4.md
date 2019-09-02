@@ -55,3 +55,4 @@ spec:
   resolution: STATIC
 
 
+Optional: understand how CRDs work in Istio and Helm, see bugs and releases which resolve earlier issues with purging CRDs in Helm (leaving artifacts behind, not deleting as expected, problems with re-installs) https://github.com/istio/istio/issues/7688
