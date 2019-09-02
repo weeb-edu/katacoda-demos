@@ -27,3 +27,11 @@ Sure, why not, make sure autocompletion works on istioctl
 Install all the Istio Custom Resource Definitions (CRDs) using kubectl apply, and wait a few seconds for the CRDs to be committed in the Kubernetes API-server:
 
 `for i in install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done`{{execute}}
+
+Ensure services are deployed:
+
+`kubectl get svc -n istio-system`{{execute}}
+
+Ensure corresponding Kubernetes pods are deployed and have a STATUS of Running:
+
+`kubectl get pods -n istio-system`{{execute}}
