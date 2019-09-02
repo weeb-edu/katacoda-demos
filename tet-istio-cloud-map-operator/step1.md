@@ -1,21 +1,33 @@
-This is your first step
+## First, install Envoy
 
-## Task
+Update apt index
+`sudo apt-get update`{{execute}}
 
-Clone https://github.com/tetratelabs/istio-cloud-map by clicking the command below
+Install packages required for apt to communicate via HTTPS
+`sudo apt-get install -y \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg-agent \
+software-properties-common`{{execute}}
 
-`git clone https://github.com/tetratelabs/istio-cloud-map tet-istio-cloud-map-operator` {{execute}}
+Add the Tetrate GPG key
+`curl -sL 'https://getenvoy.io/gpg' | sudo apt-key add -`{{execute}}
 
-Hmm I wonder why that's not working 
+Verify the key has the fingerprint 5270 CEAC 57F6 3EBD 9EA9 005D 0253 D0B2 6FF9 74DB.
+`apt-key fingerprint 6FF974DB`{{execute}}
 
-<pre>`echo "Run in Terminal"`{{execute}}</pre>
+Add the stable repository
+`sudo add-apt-repository \
+"deb [arch=amd64] https://dl.bintray.com/tetrate/getenvoy-deb \
+$(lsb_release -cs) \
+stable"`{{execute}}
 
-That doesn't @#!@# work either.
+Install Envoy binary
+`sudo apt-get update && sudo apt-get install -y getenvoy-envoy`{{execute}}
 
+Great! Verify Envoy has been installed:
 
+`envoy --version`{{execute}}
 
-## Task
-
-This is an _example_ of creating a scenario and running a **command**
-
-`echo 'Hello World'`{{execute}}
+Congratulations! Next: getting Envoy set up as a basic front proxy for Google and Bing.  
