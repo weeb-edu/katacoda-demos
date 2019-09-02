@@ -2,4 +2,4 @@ In this self paced tutorial we will walk through the steps to become familiar wi
 
 ## Let's get started
 
-First, we will install Envoy
+First, we will install Envoy and set it up as a basic front proxy.
