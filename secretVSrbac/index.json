@@ -1,6 +1,6 @@
 {
-  "title": "RBAC vs Secret",
-  "description": "Kubernetes: It's no Secret that RBAC is Better",
+  "title": "Kubernetes: It's no Secret, RBAC is Better",
+  "description": "Secret vs RBAC",
   "difficulty": "Beginner",
   "time": "10m",
   "details": {
