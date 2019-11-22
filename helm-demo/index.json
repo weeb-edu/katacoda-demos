@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes: It's no Secret, RBAC is Better",
-  "description": "Secret vs RBAC",
+  "title": "Helm Demonstration for Harness",
+  "description": "helm tag and release demo",
   "difficulty": "Beginner",
   "time": "10m",
   "details": {
