@@ -28,14 +28,6 @@
     "finish": {
       "text": "finish.md"
     }
-    "assets": {
-    "host01": [
-        {
-          "file": "pv.yaml",
-          "target": "~/"
-        }
-      ]
-     }
   },
   "environment": {
     "uilayout": "terminal"
