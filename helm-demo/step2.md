@@ -16,3 +16,5 @@ What's running?
 
 `helm ls`{{execute}}
 
+No, what's reallllly running?
+`kubectl get all`{{execute}}
