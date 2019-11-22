@@ -2,6 +2,7 @@
 ## First, install Helm
 
 First, we install the latest version of Helm (2.x)
+
 `curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh`{{execute}}
 `chmod 700 get_helm.sh`{{execute}}
 `./get_helm.sh`{{execute}}
