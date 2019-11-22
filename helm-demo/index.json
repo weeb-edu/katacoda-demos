@@ -43,8 +43,15 @@
     },
     "finish": {
       "text": "finish.md"
-    }
-  },
+    },
+    "assets": {
+    "client": [
+     {
+      "file": "pv.yaml",
+      "target": "~/"
+     }
+     ],
+     },
   "environment": {
     "uilayout": "terminal"
   },
