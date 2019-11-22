@@ -1,6 +1,4 @@
-## Install kubernetes cluster
-
-`kubectl apply -f pv.yaml`{{execute}}
+## Dynamically set and scale
 
 
 Use Helm to set for nginx example (not redis)
