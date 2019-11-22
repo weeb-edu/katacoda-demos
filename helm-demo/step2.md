@@ -6,11 +6,11 @@ How about redis. Sure, let's install nginx.
 
 Inspect will give us a little more context around a chart:
 
-`helm inspect stable/nginx`{{execute}}
+`helm inspect stable/nginx-ingress`{{execute}}
 
 Install the chart:
 
-`helm install stable/nginx`{{execute}}
+`helm install stable/nginx-ingress`{{execute}}
 
 What's running?
 
