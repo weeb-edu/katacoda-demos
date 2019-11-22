@@ -1,4 +1,4 @@
-## Let's install a Chart
+## Install kubernetes cluster
 
 Let's prep the mounts
 
