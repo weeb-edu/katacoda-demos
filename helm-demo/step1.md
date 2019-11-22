@@ -11,7 +11,7 @@ We see that Tiller is not yet installed
 `helm init`{{execute}}
 
 Helm has a working set of public repositories. More on this later, but for now the repo cache can be updated.
-`helm repo update`
+`helm repo update`{{execute}}
 
 At this point Helm should be healthy.
 `helm version`{{execute}}
