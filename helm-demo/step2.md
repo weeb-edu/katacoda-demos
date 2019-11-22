@@ -1,16 +1,16 @@
 ## Let's install a Chart
 
-How about redis. Sure, let's install redis.
+How about redis. Sure, let's install nginx.
 
-`helm search redis`{{execute}}
+`helm search nginx`{{execute}}
 
 Inspect will give us a little more context around a chart:
 
-`helm inspect stable/redis`{{execute}}
+`helm inspect stable/nginx`{{execute}}
 
 Install the chart:
 
-`helm install stable/redis`{{execute}}
+`helm install stable/nginx`{{execute}}
 
 What's running?
 
