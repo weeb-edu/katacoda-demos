@@ -1,20 +1,20 @@
 ## Let's install a Chart
 
-How about redis. Sure, let's install nginx.
+`kubectl cluster-info`{{execute}}
 
-`helm search nginx`{{execute}}
+Thanks, Bitnami! Download demo charts from their docs:
 
-Inspect will give us a little more context around a chart:
+`git clone https://github.com/bitnami/charts.git`{{execute}}
+`cd charts/bitnami/nginx`{{execute}}
 
-`helm inspect stable/nginx-ingress`{{execute}}
+Download all needed dependencies:
 
-Install the chart:
+`helm dep list`{{execute}}
+`helm dep update`{{execute}}
+`helm dep build`{{execute}}
 
-`helm install stable/nginx-ingress`{{execute}}
+lint check:
 
-What's running?
+`helm lint .`{{execute}}
 
-`helm ls`{{execute}}
 
-No, what's reallllly running?
-`kubectl get all`{{execute}}
