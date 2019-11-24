@@ -40,20 +40,13 @@
         ],
         "intro": {
             "text": "intro.md"
-            "credits": "Thanks to JavaJon for his Helm install demonstration on Katacoda!"
         },
         "finish": {
             "text": "finish.md"
         } 
-        "assets": {
-            "host01": [
-              {"file": "*", "target": "/root"}
-            ]
-          }
-        },
+      },
     "environment": {
         "uilayout": "terminal"
-        "uimessage1": "\u001b[32mYour Interactive Hands On Lab Terminal\u001b[m\r\n"
     },
     "backend": {
         "imageid": "kubernetes-cluster-running"
