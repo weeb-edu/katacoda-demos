@@ -12,6 +12,12 @@ chmod 700 get_helm.sh
 We see that Tiller is not yet installed
 `helm init`{{execute}}
 
+You might need to wait a minute for all the install scripts to finish. 
+Check to confirm tiller has installed successfully with no errors before proceeding.
+
+Let's confirm the install was completed:
+`kubectl get pods -n kube-system | grep tiller`{{execute}}
+
 Helm has a working set of public repositories. More on this later, but for now the repo cache can be updated.
 `helm repo update`{{execute}}
 
