@@ -1,37 +1,44 @@
 {
-  "title": "Helm Demonstration for Harness",
+  "title": "Helm Demonstration",
   "description": "helm tag and release demo",
   "difficulty": "Beginner",
   "time": "10m",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Install Helm",
         "text": "step1.md"
+        "code": "clear.sh"
       },
       {
-        "title": "Step 2",
+        "title": "Confirm Install",
         "text": "step2.md"
+        "code": "clear.sh"
       },
       {
         "title": "Step 3",
         "text": "step3.md"
+        "code": "clear.sh"
       },
       {
         "title": "Step 4",
         "text": "step4.md"
+        "code": "clear.sh"
       },
       {
         "title": "Step 5",
         "text": "step5.md"
+        "code": "clear.sh"
       },
       {
         "title": "Step 6",
         "text": "step6.md"
+        "code": "clear.sh"
       },
       {
         "title": "Step 7",
         "text": "step7.md"
+        "code": "clear.sh"
       },
       {
         "title": "Step 8",
@@ -40,6 +47,8 @@
     ],
     "intro": {
       "text": "intro.md"
+      "code": "set-env.sh",
+      "credits": "Thanks to JavaJon for his Helm install demonstration on Katacoda!"
     },
     "finish": {
       "text": "finish.md"
@@ -47,8 +56,9 @@
   },
   "environment": {
     "uilayout": "terminal"
+    "uimessage1": "\u001b[32mYour Interactive Hands On Lab Terminal\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "minikube-running"
+    "imageid": "kubernetes-cluster-running"
   }
 }
