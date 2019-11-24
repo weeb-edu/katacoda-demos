@@ -23,3 +23,6 @@ Repos installed:
 `helm repo list`{{execute}}
 
 Great! Next, Let's install some charts.
+
+Oh yeah, tree would be nice in this demo so
+`apt install tree`{{execute}}
