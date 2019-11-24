@@ -2,7 +2,7 @@
   "title": "Helm Demonstration",
   "description": "helm tag and release demo",
   "difficulty": "Beginner",
-  "time": "10m",
+  "time": "25m",
   "details": {
     "steps": [
       {
