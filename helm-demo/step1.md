@@ -3,9 +3,11 @@
 
 First, we install the latest version of Helm (2.x)
 
-`curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh`{{execute}}
-`chmod 700 get_helm.sh`{{execute}}
-`./get_helm.sh`{{execute}}
+Helm can be downloaded from https://github.com/kubernetes/helm/releases
+
+`curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
+chmod 700 get_helm.sh
+./get_helm.sh`{{execute}}
 
 We see that Tiller is not yet installed
 `helm init`{{execute}}
