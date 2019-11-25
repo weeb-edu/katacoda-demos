@@ -14,7 +14,7 @@ Examine contents on the command line. To get you started:
 `cat ./testapi-chart/values.yaml`{{execute}}
 
 Helm lint check the chart:
-`cd /root/testapi/testapi-chart ; helm lint .`{{execute}}
+`cd /root/testapi/testapi-chart ; helm lint testapi-chart/`{{execute}}
 
 Looks good!
 
