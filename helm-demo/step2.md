@@ -1,20 +1,21 @@
-## Let's install a Chart
+## Let's download an example chart and examine it
 
-`kubectl cluster-info`{{execute}}
+Download a test go api by 
+`git clone https://github.com/daemonza/testapi.git; cd testapi`{{execute}}
 
-Thanks, Bitnami! Download demo charts from their docs:
+Credit to Daemonza for the excellent test API in Go:
+https://daemonza.github.io/2017/02/20/using-helm-to-deploy-to-kubernetes/
 
-`git clone https://github.com/bitnami/charts.git`{{execute}}
-`cd charts/bitnami/nginx`{{execute}}
+Here are the contents of the chart:
+`tree ./testapi-chart/`{{execute}}
 
-Download all needed dependencies:
+Take a look at the contents:
+`cat ./testapi-chart/Chart.yaml`{{execute}}
+`cat ./testapi-chart/values.yaml`{{execute}}
 
-`helm dep list`{{execute}}
-`helm dep update`{{execute}}
-`helm dep build`{{execute}}
-
-lint check:
-
+Helm lint checking is good practice:
 `helm lint .`{{execute}}
+
+Looks good!
 
 
