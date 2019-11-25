@@ -1,7 +1,7 @@
 
 ## Manual update of version number in Chart.yaml
 
-Expected output:
+Example output:
 
 master $ helm ls
 
@@ -19,7 +19,13 @@ Let's pretend we have a new version to upgrade in our Helm Chart:
 
 Confirm your version changes before running the upgrade command:
 
-`cd /root/testapi ; helm upgrade <replace with name, e.g., chaotic-corvid> ./testapi-chart`{{execute}}
+For the following commands, you will have to replace the <name> value with the custom name created by Kubernetes.
+
+Name: A non-empty string guaranteed to be unique within a given scope at a particular time; used in resource URLs; provided by clients at creation time and encouraged to be human friendly; intended to facilitate creation idempotence and space-uniqueness of singleton objects, distinguish distinct entities, and reference particular entities across operations.
+
+See the Kubernetes documentation for further detail.
+
+`cd /root/testapi ; helm upgrade <replace with your name, e.g., vociferous-mandrill> ./testapi-chart`{{execute}}
 
 Check to see the revision number has been incremented by expected number of changes, 
 the time/date for update has been updated, and the chart version is correct/as expected.
