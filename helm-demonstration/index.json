@@ -43,6 +43,11 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "pv.yaml", "target": "/root/"}
+      ]
     }
   },
   "environment": {
