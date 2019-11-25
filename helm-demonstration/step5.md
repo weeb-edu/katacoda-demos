@@ -15,6 +15,8 @@ Let's pretend we have a new version to upgrade in our Helm Chart:
 `cd /root/testapi ; cat ./testapi-chart/Chart.yaml ; sed -i 's/version: 0.1.0/version: 0.1.1/g' ./testapi-chart/Chart.yaml`{{execute}}
 `cat ./testapi-chart/Chart.yaml`{{execute}}
 
+---- NOTE: replace this with ENV variable templating ----
+
 Confirm your version changes before running the upgrade command:
 
 For the following commands, you will have to replace the <name> value with the custom name created by Kubernetes.
