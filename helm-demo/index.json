@@ -18,32 +18,24 @@
             "text": "step3.md"
         },
         {
-            "title": "Save a local Helm Chart",
+            "title": "Install",
             "text": "step4.md"
         },
         {
-            "title": "Install our Helm Chart",
+            "title": "Upgrade",
             "text": "step5.md"
         },
         {
-            "title": "Examine installation",
+            "title": "Upgrade, Rollback",
             "text": "step6.md"
         },
         {
-            "title": "Upgrade version in Chart.yaml",
+            "title": "Install a second Helm Chart",
             "text": "step7.md"
         },
         {
-            "title": "Upgrade, then Rollback",
+            "title": "Delete, then Clean Up",
             "text": "step8.md"
-        }
-        {
-            "title": "Install a second Helm Chart",
-            "text": "step9.md"
-        }
-        {
-            "title": "Delete and Clean Up",
-            "text": "step10.md"
         }
         ],
         "intro": {
