@@ -5,8 +5,13 @@ It is also possible to install another cluster in parallel with a second install
 To install another cluster:
 `cd /root/testapi ; helm install ./testapi-chart`{{execute}}
 
+Confirm:
+
 `kubectl get deployments`{{execute}}
+
 `helm ls`{{execute}}
+
 `kubectl get pods`{{execute}}
+
 
 
