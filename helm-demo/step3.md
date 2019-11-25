@@ -25,9 +25,14 @@ Copy and run commands under NOTES as usual for exporting the POD_NAME and port f
 
 `helm ls`{{execute}} to see our new helm controlled installation.
 
+-----
+
 Expected output:
 
 master $ helm ls
+
 NAME                    REVISION        UPDATED                         STATUS          CHART                   APP VERSION     NAMESPACE
+
 vociferous-mandrill     5               Mon Nov 25 00:00:45 2019        DEPLOYED        testapi-chart-0.1.1                     default
+
 master $
