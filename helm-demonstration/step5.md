@@ -17,6 +17,8 @@ Let's pretend we have a new version to upgrade in our Helm Chart:
 
 ---- NOTE: replace this with ENV variable templating ----
 
+---- NOTE: custom values.yaml files if needed ----
+
 Confirm your version changes before running the upgrade command:
 
 For the following commands, you will have to replace the <name> value with the custom name created by Kubernetes.
