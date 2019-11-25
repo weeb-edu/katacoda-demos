@@ -12,7 +12,7 @@ Successfully saved /root/testapi/testapi-chart-0.1.0.tgz to /root/.helm/reposito
 Note that this chart has been saved locally.
 
 Update helm repo
-`helm update repo`{{execute}}
+`helm repo update`{{execute}}
 
 Search for testapi-chart: (note name for installation)
 
