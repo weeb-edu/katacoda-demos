@@ -9,8 +9,6 @@ NAME                    REVISION        UPDATED                         STATUS  
 
 vociferous-mandrill     5               Mon Nov 25 00:00:45 2019        DEPLOYED        testapi-chart-0.1.1                     default
 
-master $
-
 
 Let's pretend we have a new version to upgrade in our Helm Chart:
 
