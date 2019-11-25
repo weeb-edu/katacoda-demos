@@ -1,6 +1,10 @@
 
 ## Install the Chart
 
+Inspect the chart for further detail:
+
+`helm inspect testapi-chart`{{execute}}
+
 Install the chart:
 
 `helm install testapi-chart`{{execute}}
