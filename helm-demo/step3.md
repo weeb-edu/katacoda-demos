@@ -6,7 +6,8 @@
 Expected output:
 
 Successfully packaged chart and saved it to: /root/testapi/testapi-chart-0.1.0.tgz
-[debug] Successfully saved /root/testapi/testapi-chart-0.1.0.tgz to /root/.helm/repository/local
+
+Successfully saved /root/testapi/testapi-chart-0.1.0.tgz to /root/.helm/repository/local
 
 Update helm repo
 `helm update repo`{{execute}}
