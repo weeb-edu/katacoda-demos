@@ -19,7 +19,7 @@ Let's pretend we have a new version to upgrade in our Helm Chart:
 
 Confirm your version changes before running the upgrade command:
 
-`cd /root/testapi ; helm upgrade <enter podname here> ./testapi-chart`{{execute}}
+`cd /root/testapi ; helm upgrade <replace with name, e.g., chaotic-corvid> ./testapi-chart`{{execute}}
 
 Check to see the revision number has been incremented by expected number of changes, 
 the time/date for update has been updated, and the chart version is correct/as expected.
@@ -34,7 +34,7 @@ Let's do that one more time to give us some rollback room:
 `cat ./testapi-chart/Chart.yaml`{{execute}}
 
 2. Upgrade using helm
-`cd /root/testapi ; helm upgrade <enter podname here> ./testapi-chart`{{execute}}
+`cd /root/testapi ; helm upgrade <name> ./testapi-chart`{{execute}}
 
 Awesome!
 `helm ls`{{execute}}
