@@ -1,33 +1,33 @@
-## Dynamically set and scale
+## Let's create a chart and package it, and then save it locally
 
 
-Use Helm to set for nginx example (not redis)
+`cd /root/testapi; helm package testapi-chart --debug`{{execute}}
 
-`helm upgrade --set scale=9,tag="1.12" <name> <chartname>`{{execute}}
+Expected output:
 
+Successfully packaged chart and saved it to: /root/testapi/testapi-chart-0.1.0.tgz
+[debug] Successfully saved /root/testapi/testapi-chart-0.1.0.tgz to /root/.helm/repository/local
 
-See changes happening
+Update helm repo
+`helm update repo`{{execute}}
 
-`kubectl get pods`{{execute}}
+Let's look for our testapi-chart in order to find name for installation:
 
-Check release inside of pod
+`helm search testapi-chart`{{execute}}
 
-`kubectl exec nginx-podname -- nginx -v`{{execute}}
+Install the chart:
 
-Helm rollback
+`helm install testapi-chart`{{execute}}
 
-`helm rollback <livid-llama> 1`{{execute}}
+Note LAST DEPLOYED information, as well as namespace, pod names, service name, and deployment name
 
-Where the 1 is the revision number
+Copy and run commands under NOTES as usual for exporting the POD_NAME and port forwarding the POD_NAME in order to expose the ports for testing.
 
-Check release inside of pod again
+`helm ls`{{execute}} to see our new helm controlled installation.
 
-`kubectl exec nginx-podname -- nginx -v`{{execute}}
+Expected output:
 
-Replaces the following commands:
-
-kubectl apply -f service.yaml
-kubectl apply -f deployment.yaml 
-kubectl apply -f ingress.yaml
-kubectl set image deployment/nginx nginx=1.13
-kubectl scale deployment nginx --replicas=9
+master $ helm ls
+NAME                    REVISION        UPDATED                         STATUS          CHART                   APP VERSION     NAMESPACE
+vociferous-mandrill     5               Mon Nov 25 00:00:45 2019        DEPLOYED        testapi-chart-0.1.1                     default
+master $
