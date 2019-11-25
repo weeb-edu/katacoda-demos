@@ -5,7 +5,7 @@ Inspect the chart for further detail:
 
 `helm inspect testapi-chart`{{execute}}
 
-Before you install the chart, check out the template is rendered and check descriptors:
+Before you install the chart, check out how the template is rendered and check descriptors:
 
 `helm install --dry-run --debug <chartname>`{{execute}}
 
