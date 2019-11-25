@@ -3,6 +3,7 @@
 Now that we have two installs of the helm chart, let's show how to delete one:
 
 `helm ls`{{execute}}
+
 `kubectl get deployments`{{execute}}
 
 `helm delete --purge <name>`{{execute}}
